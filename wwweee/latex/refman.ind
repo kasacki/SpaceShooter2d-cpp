@@ -1,0 +1,311 @@
+\begin{theindex}
+
+  \item {$\sim$Game}
+    \subitem {Game}, 29
+  \item {$\sim$MysteryShip}
+    \subitem {MysteryShip}, 34
+  \item {$\sim$Spaceship}
+    \subitem {Spaceship}, 38
+
+  \indexspace
+
+  \item {active}
+    \subitem {Laser}, 33
+  \item {Alien}, 11
+    \subitem {Alien}, 12
+    \subitem {alienImages}, 13
+    \subitem {Draw}, 12
+    \subitem {edge}, 13
+    \subitem {getRect}, 12
+    \subitem {IsOffScreen}, 13
+    \subitem {position}, 14
+    \subitem {type}, 14
+    \subitem {Update}, 13
+    \subitem {velocity}, 14
+  \item {alien.cpp}, 41
+  \item {alien.h}, 41
+  \item {alienA}, 14
+    \subitem {alienA}, 16
+    \subitem {alienAImages}, 18
+    \subitem {Draw}, 16
+    \subitem {GetImage}, 16
+    \subitem {getRect}, 17
+    \subitem {IsOffScreen}, 17
+    \subitem {LoadImages}, 17
+    \subitem {UnloadImages}, 17
+    \subitem {Update}, 18
+  \item {alienA.cpp}, 42
+  \item {alienA.h}, 42
+  \item {alienAImages}
+    \subitem {alienA}, 18
+  \item {alienB}, 18
+    \subitem {alienB}, 20
+    \subitem {alienBImages}, 22
+    \subitem {Draw}, 20
+    \subitem {GetImage}, 20
+    \subitem {getRect}, 21
+    \subitem {IsOffScreen}, 21
+    \subitem {LoadImages}, 21
+    \subitem {UnloadImages}, 21
+    \subitem {Update}, 22
+  \item {alienB.cpp}, 42
+  \item {alienB.h}, 43
+  \item {alienBImages}
+    \subitem {alienB}, 22
+  \item {alienC}, 22
+    \subitem {alienC}, 24
+    \subitem {alienCImages}, 26
+    \subitem {Draw}, 24
+    \subitem {GetImage}, 24
+    \subitem {getRect}, 25
+    \subitem {IsOffScreen}, 25
+    \subitem {LoadImages}, 25
+    \subitem {UnloadImages}, 25
+    \subitem {Update}, 26
+  \item {alienC.cpp}, 43
+  \item {alienC.h}, 43
+  \item {alienCImages}
+    \subitem {alienC}, 26
+  \item {alienImages}
+    \subitem {Alien}, 13
+  \item {AlienLike}, 9
+  \item {alienSpawnInterval}
+    \subitem {Game}, 30
+  \item {alive}
+    \subitem {MysteryShip}, 35
+
+  \indexspace
+
+  \item {Block}, 26
+    \subitem {Block}, 27
+    \subitem {Draw}, 27
+    \subitem {getRect}, 27
+  \item {block.cpp}, 44
+  \item {block.h}, 44
+  \item {blocks}
+    \subitem {Obstacle}, 37
+
+  \indexspace
+
+  \item {CreateObstacles}
+    \subitem {Game}, 29
+
+  \indexspace
+
+  \item {Draw}
+    \subitem {Alien}, 12
+    \subitem {alienA}, 16
+    \subitem {alienB}, 20
+    \subitem {alienC}, 24
+    \subitem {Block}, 27
+    \subitem {Game}, 29
+    \subitem {Laser}, 32
+    \subitem {MysteryShip}, 34
+    \subitem {Obstacle}, 37
+    \subitem {Spaceship}, 39
+
+  \indexspace
+
+  \item {edge}
+    \subitem {Alien}, 13
+
+  \indexspace
+
+  \item {FireLaser}
+    \subitem {Spaceship}, 39
+  \item {FireLasers}
+    \subitem {MysteryShip}, 34
+  \item {FormatWithLeadingZeros}
+    \subitem {main.cpp}, 49
+
+  \indexspace
+
+  \item {Game}, 28
+    \subitem {$\sim$Game}, 29
+    \subitem {alienSpawnInterval}, 30
+    \subitem {CreateObstacles}, 29
+    \subitem {Draw}, 29
+    \subitem {Game}, 29
+    \subitem {HandleInput}, 29
+    \subitem {highscore}, 30
+    \subitem {lives}, 30
+    \subitem {music}, 30
+    \subitem {Reset}, 29
+    \subitem {run}, 30
+    \subitem {score}, 30
+    \subitem {timeLastAlienFiredA}, 31
+    \subitem {timeLastAlienFiredB}, 31
+    \subitem {timeLastAlienFiredC}, 31
+    \subitem {Update}, 30
+  \item {game.cpp}, 45
+  \item {game.h}, 45
+  \item {GetImage}
+    \subitem {alienA}, 16
+    \subitem {alienB}, 20
+    \subitem {alienC}, 24
+  \item {getRect}
+    \subitem {Alien}, 12
+    \subitem {alienA}, 17
+    \subitem {alienB}, 21
+    \subitem {alienC}, 25
+    \subitem {Block}, 27
+    \subitem {Laser}, 32
+    \subitem {MysteryShip}, 34
+    \subitem {Spaceship}, 39
+  \item {grid}
+    \subitem {Obstacle}, 37
+
+  \indexspace
+
+  \item {HandleInput}
+    \subitem {Game}, 29
+  \item {highscore}
+    \subitem {Game}, 30
+
+  \indexspace
+
+  \item {IsOffScreen}
+    \subitem {Alien}, 13
+    \subitem {alienA}, 17
+    \subitem {alienB}, 21
+    \subitem {alienC}, 25
+
+  \indexspace
+
+  \item {Laser}, 31
+    \subitem {active}, 33
+    \subitem {Draw}, 32
+    \subitem {getRect}, 32
+    \subitem {Laser}, 32
+    \subitem {position}, 33
+    \subitem {Update}, 32
+    \subitem {velocity}, 33
+  \item {laser.cpp}, 47
+  \item {laser.h}, 47
+  \item {lasers}
+    \subitem {Spaceship}, 40
+  \item {lastFireTime}
+    \subitem {MysteryShip}, 35
+  \item {lives}
+    \subitem {Game}, 30
+  \item {LoadImages}
+    \subitem {alienA}, 17
+    \subitem {alienB}, 21
+    \subitem {alienC}, 25
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, 49
+  \item {main.cpp}, 48
+    \subitem {FormatWithLeadingZeros}, 49
+    \subitem {main}, 49
+  \item {mlasers}
+    \subitem {MysteryShip}, 35
+  \item {MoveDown}
+    \subitem {Spaceship}, 39
+  \item {MoveLeft}
+    \subitem {Spaceship}, 39
+  \item {movementDirection}
+    \subitem {Spaceship}, 40
+  \item {MoveRight}
+    \subitem {Spaceship}, 39
+  \item {MoveUp}
+    \subitem {Spaceship}, 40
+  \item {music}
+    \subitem {Game}, 30
+  \item {MysteryShip}, 33
+    \subitem {$\sim$MysteryShip}, 34
+    \subitem {alive}, 35
+    \subitem {Draw}, 34
+    \subitem {FireLasers}, 34
+    \subitem {getRect}, 34
+    \subitem {lastFireTime}, 35
+    \subitem {mlasers}, 35
+    \subitem {MysteryShip}, 34
+    \subitem {Spawn}, 35
+    \subitem {Update}, 35
+  \item {mysteryship.cpp}, 49
+  \item {mysteryship.h}, 49
+
+  \indexspace
+
+  \item {Obstacle}, 36
+    \subitem {blocks}, 37
+    \subitem {Draw}, 37
+    \subitem {grid}, 37
+    \subitem {Obstacle}, 36
+    \subitem {position}, 37
+  \item {obstacle.cpp}, 50
+  \item {obstacle.h}, 50
+
+  \indexspace
+
+  \item {position}
+    \subitem {Alien}, 14
+    \subitem {Laser}, 33
+    \subitem {Obstacle}, 37
+
+  \indexspace
+
+  \item {Reset}
+    \subitem {Game}, 29
+    \subitem {Spaceship}, 40
+  \item {run}
+    \subitem {Game}, 30
+
+  \indexspace
+
+  \item {score}
+    \subitem {Game}, 30
+  \item {Spaceship}, 38
+    \subitem {$\sim$Spaceship}, 38
+    \subitem {Draw}, 39
+    \subitem {FireLaser}, 39
+    \subitem {getRect}, 39
+    \subitem {lasers}, 40
+    \subitem {MoveDown}, 39
+    \subitem {MoveLeft}, 39
+    \subitem {movementDirection}, 40
+    \subitem {MoveRight}, 39
+    \subitem {MoveUp}, 40
+    \subitem {Reset}, 40
+    \subitem {Spaceship}, 38
+  \item {spaceship.cpp}, 51
+  \item {spaceship.h}, 51
+  \item {Spawn}
+    \subitem {MysteryShip}, 35
+
+  \indexspace
+
+  \item {timeLastAlienFiredA}
+    \subitem {Game}, 31
+  \item {timeLastAlienFiredB}
+    \subitem {Game}, 31
+  \item {timeLastAlienFiredC}
+    \subitem {Game}, 31
+  \item {type}
+    \subitem {Alien}, 14
+
+  \indexspace
+
+  \item {UnloadImages}
+    \subitem {alienA}, 17
+    \subitem {alienB}, 21
+    \subitem {alienC}, 25
+  \item {Update}
+    \subitem {Alien}, 13
+    \subitem {alienA}, 18
+    \subitem {alienB}, 22
+    \subitem {alienC}, 26
+    \subitem {Game}, 30
+    \subitem {Laser}, 32
+    \subitem {MysteryShip}, 35
+
+  \indexspace
+
+  \item {velocity}
+    \subitem {Alien}, 14
+    \subitem {Laser}, 33
+
+\end{theindex}

@@ -1,0 +1,193 @@
+\doxysection{Spaceship Class Reference}
+\label{class_spaceship}\index{Spaceship@{Spaceship}}
+
+
+Klasa reprezentująca statek kosmiczny gracza.  
+
+
+
+
+{\ttfamily \#include $<$spaceship.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Spaceship} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{Spaceship}{p.}{class_spaceship}. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Spaceship} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxyref{Spaceship}{p.}{class_spaceship}. \end{DoxyCompactList}\item 
+void \textbf{ Draw} ()
+\begin{DoxyCompactList}\small\item\em Rysuje statek kosmiczny na ekranie. \end{DoxyCompactList}\item 
+void \textbf{ Move\+Left} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa statek w lewo. \end{DoxyCompactList}\item 
+void \textbf{ Move\+Right} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa statek w prawo. \end{DoxyCompactList}\item 
+void \textbf{ Move\+Up} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa statek w górę. \end{DoxyCompactList}\item 
+void \textbf{ Move\+Down} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa statek w dół. \end{DoxyCompactList}\item 
+void \textbf{ Fire\+Laser} ()
+\begin{DoxyCompactList}\small\item\em Powoduje, że statek wystrzeliwuje laser. \end{DoxyCompactList}\item 
+Rectangle \textbf{ get\+Rect} ()
+\begin{DoxyCompactList}\small\item\em Zwraca prostokąt kolizji statku. \end{DoxyCompactList}\item 
+void \textbf{ Reset} ()
+\begin{DoxyCompactList}\small\item\em Resetuje pozycję statku i usuwa wszystkie aktywne lasery. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \textbf{ Laser} $>$ \textbf{ lasers}
+\begin{DoxyCompactList}\small\item\em Wektor laserów wystrzelonych przez statek gracza. \end{DoxyCompactList}\item 
+Vector2 \textbf{ movement\+Direction}
+\begin{DoxyCompactList}\small\item\em Kierunek ostatniego ruchu statku (używany do określenia kierunku strzału). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca statek kosmiczny gracza. 
+
+
+\begin{DoxyItemize}
+\item Odpowiada za ruch statku, strzelanie laserami i zarządzanie jego stanem. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{class_spaceship_a13f1c8eb5ded2fb1687203322b22bca9} 
+\index{Spaceship@{Spaceship}!Spaceship@{Spaceship}}
+\index{Spaceship@{Spaceship}!Spaceship@{Spaceship}}
+\doxysubsubsection{Spaceship()}
+{\footnotesize\ttfamily Spaceship\+::\+Spaceship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxyref{Spaceship}{p.}{class_spaceship}. 
+
+
+\begin{DoxyItemize}
+\item Inicjalizuje statek gracza, ładuje tekstury i dźwięki. 
+\end{DoxyItemize}\label{class_spaceship_a473c4336d51f8d87730c75686b184f29} 
+\index{Spaceship@{Spaceship}!````~Spaceship@{$\sim$Spaceship}}
+\index{````~Spaceship@{$\sim$Spaceship}!Spaceship@{Spaceship}}
+\doxysubsubsection{$\sim$Spaceship()}
+{\footnotesize\ttfamily Spaceship\+::$\sim$\+Spaceship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxyref{Spaceship}{p.}{class_spaceship}. 
+
+
+\begin{DoxyItemize}
+\item Zwolnienie załadowanych tekstur i dźwięków. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\label{class_spaceship_aaeb77633a8b6b1f77c9a1969f1e71551} 
+\index{Spaceship@{Spaceship}!Draw@{Draw}}
+\index{Draw@{Draw}!Spaceship@{Spaceship}}
+\doxysubsubsection{Draw()}
+{\footnotesize\ttfamily void Spaceship\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rysuje statek kosmiczny na ekranie. 
+
+\label{class_spaceship_a8593cd8d913fc8193b18f9c3d536f615} 
+\index{Spaceship@{Spaceship}!FireLaser@{FireLaser}}
+\index{FireLaser@{FireLaser}!Spaceship@{Spaceship}}
+\doxysubsubsection{FireLaser()}
+{\footnotesize\ttfamily void Spaceship\+::\+Fire\+Laser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Powoduje, że statek wystrzeliwuje laser. 
+
+\label{class_spaceship_a37753b86edf6acd6d57ead782509bc1d} 
+\index{Spaceship@{Spaceship}!getRect@{getRect}}
+\index{getRect@{getRect}!Spaceship@{Spaceship}}
+\doxysubsubsection{getRect()}
+{\footnotesize\ttfamily Rectangle Spaceship\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca prostokąt kolizji statku. 
+
+\begin{DoxyReturn}{Returns}
+Obiekt Rectangle reprezentujący obszar kolizji statku. 
+\end{DoxyReturn}
+\label{class_spaceship_a0023a79831eb01fd2cbe3f54fc012bbd} 
+\index{Spaceship@{Spaceship}!MoveDown@{MoveDown}}
+\index{MoveDown@{MoveDown}!Spaceship@{Spaceship}}
+\doxysubsubsection{MoveDown()}
+{\footnotesize\ttfamily void Spaceship\+::\+Move\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przesuwa statek w dół. 
+
+\label{class_spaceship_a77088b8a6402ebbe33bf41e9482c0e56} 
+\index{Spaceship@{Spaceship}!MoveLeft@{MoveLeft}}
+\index{MoveLeft@{MoveLeft}!Spaceship@{Spaceship}}
+\doxysubsubsection{MoveLeft()}
+{\footnotesize\ttfamily void Spaceship\+::\+Move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przesuwa statek w lewo. 
+
+\label{class_spaceship_a0dbe5cc92b03b4f2c638e42430c3d666} 
+\index{Spaceship@{Spaceship}!MoveRight@{MoveRight}}
+\index{MoveRight@{MoveRight}!Spaceship@{Spaceship}}
+\doxysubsubsection{MoveRight()}
+{\footnotesize\ttfamily void Spaceship\+::\+Move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przesuwa statek w prawo. 
+
+\label{class_spaceship_a2a2643437e8c65b984bfa6275143c929} 
+\index{Spaceship@{Spaceship}!MoveUp@{MoveUp}}
+\index{MoveUp@{MoveUp}!Spaceship@{Spaceship}}
+\doxysubsubsection{MoveUp()}
+{\footnotesize\ttfamily void Spaceship\+::\+Move\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przesuwa statek w górę. 
+
+\label{class_spaceship_ab7f3f0d74d356fc1721f0c0c81e0fd1c} 
+\index{Spaceship@{Spaceship}!Reset@{Reset}}
+\index{Reset@{Reset}!Spaceship@{Spaceship}}
+\doxysubsubsection{Reset()}
+{\footnotesize\ttfamily void Spaceship\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resetuje pozycję statku i usuwa wszystkie aktywne lasery. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{class_spaceship_a5536d75693f71f4539eda26d2bcc20b6} 
+\index{Spaceship@{Spaceship}!lasers@{lasers}}
+\index{lasers@{lasers}!Spaceship@{Spaceship}}
+\doxysubsubsection{lasers}
+{\footnotesize\ttfamily std\+::vector$<$\textbf{ Laser}$>$ Spaceship\+::lasers}
+
+
+
+Wektor laserów wystrzelonych przez statek gracza. 
+
+\label{class_spaceship_a92d1ab1eac4ddfec88fd28dd8e87c6f0} 
+\index{Spaceship@{Spaceship}!movementDirection@{movementDirection}}
+\index{movementDirection@{movementDirection}!Spaceship@{Spaceship}}
+\doxysubsubsection{movementDirection}
+{\footnotesize\ttfamily Vector2 Spaceship\+::movement\+Direction}
+
+
+
+Kierunek ostatniego ruchu statku (używany do określenia kierunku strzału). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ spaceship.\+h}\item 
+\textbf{ spaceship.\+cpp}\end{DoxyCompactItemize}

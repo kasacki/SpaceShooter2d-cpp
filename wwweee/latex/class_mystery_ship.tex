@@ -1,0 +1,175 @@
+\doxysection{Mystery\+Ship Class Reference}
+\label{class_mystery_ship}\index{MysteryShip@{MysteryShip}}
+
+
+Klasa reprezentująca tajemniczy statek kosmiczny.  
+
+
+
+
+{\ttfamily \#include $<$mysteryship.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Mystery\+Ship} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{Mystery\+Ship}{p.}{class_mystery_ship}. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Mystery\+Ship} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxyref{Mystery\+Ship}{p.}{class_mystery_ship}. \end{DoxyCompactList}\item 
+void \textbf{ Update} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan tajemniczego statku (ruch, czy jest aktywny). \end{DoxyCompactList}\item 
+void \textbf{ Draw} ()
+\begin{DoxyCompactList}\small\item\em Rysuje tajemniczy statek na ekranie, jeśli jest aktywny. \end{DoxyCompactList}\item 
+void \textbf{ Spawn} ()
+\begin{DoxyCompactList}\small\item\em Spawnuje tajemniczy statek w losowej pozycji początkowej. \end{DoxyCompactList}\item 
+Rectangle \textbf{ get\+Rect} ()
+\begin{DoxyCompactList}\small\item\em Zwraca prostokąt kolizji tajemniczego statku. \end{DoxyCompactList}\item 
+void \textbf{ Fire\+Lasers} ()
+\begin{DoxyCompactList}\small\item\em Powoduje, że tajemniczy statek wystrzeliwuje lasery. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ alive}
+\begin{DoxyCompactList}\small\item\em Flaga określająca, czy tajemniczy statek jest aktywny. \end{DoxyCompactList}\item 
+float \textbf{ last\+Fire\+Time}
+\begin{DoxyCompactList}\small\item\em Czas ostatniego strzału tajemniczego statku. \end{DoxyCompactList}\item 
+std\+::vector$<$ \textbf{ Laser} $>$ \textbf{ mlasers}
+\begin{DoxyCompactList}\small\item\em Wektor laserów wystrzelonych przez tajemniczy statek. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca tajemniczy statek kosmiczny. 
+
+
+\begin{DoxyItemize}
+\item Tajemniczy statek pojawia się losowo na górze ekranu, porusza się poziomo i może strzelać laserami. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{class_mystery_ship_af47bfdc3749d7505caafd79fdbec2f73} 
+\index{MysteryShip@{MysteryShip}!MysteryShip@{MysteryShip}}
+\index{MysteryShip@{MysteryShip}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{MysteryShip()}
+{\footnotesize\ttfamily Mystery\+Ship\+::\+Mystery\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxyref{Mystery\+Ship}{p.}{class_mystery_ship}. 
+
+
+\begin{DoxyItemize}
+\item Ładuje tekstury i dźwięki, ustawia początkowy stan statku. 
+\end{DoxyItemize}\label{class_mystery_ship_a4396e9190999aa5b2879b4886d11814c} 
+\index{MysteryShip@{MysteryShip}!````~MysteryShip@{$\sim$MysteryShip}}
+\index{````~MysteryShip@{$\sim$MysteryShip}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{$\sim$MysteryShip()}
+{\footnotesize\ttfamily Mystery\+Ship\+::$\sim$\+Mystery\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxyref{Mystery\+Ship}{p.}{class_mystery_ship}. 
+
+
+\begin{DoxyItemize}
+\item Zwolnienie załadowanych tekstur. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\label{class_mystery_ship_ab475b08ae4ea5bd2a42886e81dcd21a4} 
+\index{MysteryShip@{MysteryShip}!Draw@{Draw}}
+\index{Draw@{Draw}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{Draw()}
+{\footnotesize\ttfamily void Mystery\+Ship\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rysuje tajemniczy statek na ekranie, jeśli jest aktywny. 
+
+\label{class_mystery_ship_a350913c787af29826751a7a4bc7163bf} 
+\index{MysteryShip@{MysteryShip}!FireLasers@{FireLasers}}
+\index{FireLasers@{FireLasers}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{FireLasers()}
+{\footnotesize\ttfamily void Mystery\+Ship\+::\+Fire\+Lasers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Powoduje, że tajemniczy statek wystrzeliwuje lasery. 
+
+\label{class_mystery_ship_aac046c5cd6b7d786f264644adf2e99b5} 
+\index{MysteryShip@{MysteryShip}!getRect@{getRect}}
+\index{getRect@{getRect}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{getRect()}
+{\footnotesize\ttfamily Rectangle Mystery\+Ship\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca prostokąt kolizji tajemniczego statku. 
+
+\begin{DoxyReturn}{Returns}
+Obiekt Rectangle reprezentujący obszar kolizji statku.
+\begin{DoxyItemize}
+\item Zwraca prostokąt o zerowych wymiarach, jeśli statek nie jest aktywny. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\label{class_mystery_ship_a9d118d85721e8da63807a8dece23cedf} 
+\index{MysteryShip@{MysteryShip}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{Spawn()}
+{\footnotesize\ttfamily void Mystery\+Ship\+::\+Spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spawnuje tajemniczy statek w losowej pozycji początkowej. 
+
+
+\begin{DoxyItemize}
+\item Ustawia statek na początku ekranu po lewej lub prawej stronie. 
+\end{DoxyItemize}\label{class_mystery_ship_a9c7db80bac6cdaf065ab9b583770e56a} 
+\index{MysteryShip@{MysteryShip}!Update@{Update}}
+\index{Update@{Update}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{Update()}
+{\footnotesize\ttfamily void Mystery\+Ship\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan tajemniczego statku (ruch, czy jest aktywny). 
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{class_mystery_ship_a606dd0121c30dd62efeca2cd74cb9e88} 
+\index{MysteryShip@{MysteryShip}!alive@{alive}}
+\index{alive@{alive}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{alive}
+{\footnotesize\ttfamily bool Mystery\+Ship\+::alive}
+
+
+
+Flaga określająca, czy tajemniczy statek jest aktywny. 
+
+\label{class_mystery_ship_a98f73ec23cc432d687f969f555aca40b} 
+\index{MysteryShip@{MysteryShip}!lastFireTime@{lastFireTime}}
+\index{lastFireTime@{lastFireTime}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{lastFireTime}
+{\footnotesize\ttfamily float Mystery\+Ship\+::last\+Fire\+Time}
+
+
+
+Czas ostatniego strzału tajemniczego statku. 
+
+\label{class_mystery_ship_a6fbd0e0913f4d53365d336e6dc183781} 
+\index{MysteryShip@{MysteryShip}!mlasers@{mlasers}}
+\index{mlasers@{mlasers}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{mlasers}
+{\footnotesize\ttfamily std\+::vector$<$\textbf{ Laser}$>$ Mystery\+Ship\+::mlasers}
+
+
+
+Wektor laserów wystrzelonych przez tajemniczy statek. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ mysteryship.\+h}\item 
+\textbf{ mysteryship.\+cpp}\end{DoxyCompactItemize}

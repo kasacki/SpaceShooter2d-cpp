@@ -1,0 +1,189 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Concept Index}{1}{}%
+\contentsline {section}{\numberline {1.1}Concepts}{1}{}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{}%
+\contentsline {section}{\numberline {4.1}File List}{7}{}%
+\contentsline {chapter}{\numberline {5}Concept Documentation}{9}{}%
+\contentsline {section}{\numberline {5.1}Alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Like Concept Reference}{9}{}%
+\contentsline {subsection}{\numberline {5.1.1}Concept definition}{9}{}%
+\contentsline {subsection}{\numberline {5.1.2}Detailed Description}{9}{}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{}%
+\contentsline {section}{\numberline {6.1}Alien Class Reference}{11}{}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{12}{}%
+\contentsline {subsection}{\numberline {6.1.2}Constructor \& Destructor Documentation}{12}{}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}Alien()}{12}{}%
+\contentsline {subsection}{\numberline {6.1.3}Member Function Documentation}{12}{}%
+\contentsline {subsubsection}{\numberline {6.1.3.1}Draw()}{12}{}%
+\contentsline {subsubsection}{\numberline {6.1.3.2}getRect()}{13}{}%
+\contentsline {subsubsection}{\numberline {6.1.3.3}IsOffScreen()}{13}{}%
+\contentsline {subsubsection}{\numberline {6.1.3.4}Update()}{13}{}%
+\contentsline {subsection}{\numberline {6.1.4}Member Data Documentation}{13}{}%
+\contentsline {subsubsection}{\numberline {6.1.4.1}alienImages}{13}{}%
+\contentsline {subsubsection}{\numberline {6.1.4.2}edge}{14}{}%
+\contentsline {subsubsection}{\numberline {6.1.4.3}position}{14}{}%
+\contentsline {subsubsection}{\numberline {6.1.4.4}type}{14}{}%
+\contentsline {subsubsection}{\numberline {6.1.4.5}velocity}{14}{}%
+\contentsline {section}{\numberline {6.2}alienA Class Reference}{14}{}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{16}{}%
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}alienA()}{16}{}%
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}Draw()}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}GetImage()}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.3.3}getRect()}{17}{}%
+\contentsline {subsubsection}{\numberline {6.2.3.4}IsOffScreen()}{17}{}%
+\contentsline {subsubsection}{\numberline {6.2.3.5}LoadImages()}{17}{}%
+\contentsline {subsubsection}{\numberline {6.2.3.6}UnloadImages()}{18}{}%
+\contentsline {subsubsection}{\numberline {6.2.3.7}Update()}{18}{}%
+\contentsline {subsection}{\numberline {6.2.4}Member Data Documentation}{18}{}%
+\contentsline {subsubsection}{\numberline {6.2.4.1}alienAImages}{18}{}%
+\contentsline {section}{\numberline {6.3}alienB Class Reference}{18}{}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{20}{}%
+\contentsline {subsection}{\numberline {6.3.2}Constructor \& Destructor Documentation}{20}{}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}alienB()}{20}{}%
+\contentsline {subsection}{\numberline {6.3.3}Member Function Documentation}{20}{}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}Draw()}{20}{}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}GetImage()}{20}{}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}getRect()}{21}{}%
+\contentsline {subsubsection}{\numberline {6.3.3.4}IsOffScreen()}{21}{}%
+\contentsline {subsubsection}{\numberline {6.3.3.5}LoadImages()}{21}{}%
+\contentsline {subsubsection}{\numberline {6.3.3.6}UnloadImages()}{22}{}%
+\contentsline {subsubsection}{\numberline {6.3.3.7}Update()}{22}{}%
+\contentsline {subsection}{\numberline {6.3.4}Member Data Documentation}{22}{}%
+\contentsline {subsubsection}{\numberline {6.3.4.1}alienBImages}{22}{}%
+\contentsline {section}{\numberline {6.4}alienC Class Reference}{22}{}%
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{24}{}%
+\contentsline {subsection}{\numberline {6.4.2}Constructor \& Destructor Documentation}{24}{}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}alienC()}{24}{}%
+\contentsline {subsection}{\numberline {6.4.3}Member Function Documentation}{24}{}%
+\contentsline {subsubsection}{\numberline {6.4.3.1}Draw()}{24}{}%
+\contentsline {subsubsection}{\numberline {6.4.3.2}GetImage()}{24}{}%
+\contentsline {subsubsection}{\numberline {6.4.3.3}getRect()}{25}{}%
+\contentsline {subsubsection}{\numberline {6.4.3.4}IsOffScreen()}{25}{}%
+\contentsline {subsubsection}{\numberline {6.4.3.5}LoadImages()}{25}{}%
+\contentsline {subsubsection}{\numberline {6.4.3.6}UnloadImages()}{26}{}%
+\contentsline {subsubsection}{\numberline {6.4.3.7}Update()}{26}{}%
+\contentsline {subsection}{\numberline {6.4.4}Member Data Documentation}{26}{}%
+\contentsline {subsubsection}{\numberline {6.4.4.1}alienCImages}{26}{}%
+\contentsline {section}{\numberline {6.5}Block Class Reference}{26}{}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{27}{}%
+\contentsline {subsection}{\numberline {6.5.2}Constructor \& Destructor Documentation}{27}{}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}Block()}{27}{}%
+\contentsline {subsection}{\numberline {6.5.3}Member Function Documentation}{27}{}%
+\contentsline {subsubsection}{\numberline {6.5.3.1}Draw()}{27}{}%
+\contentsline {subsubsection}{\numberline {6.5.3.2}getRect()}{27}{}%
+\contentsline {section}{\numberline {6.6}Game Class Reference}{28}{}%
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{29}{}%
+\contentsline {subsection}{\numberline {6.6.2}Constructor \& Destructor Documentation}{29}{}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}Game()}{29}{}%
+\contentsline {subsubsection}{\numberline {6.6.2.2}$\sim $Game()}{29}{}%
+\contentsline {subsection}{\numberline {6.6.3}Member Function Documentation}{29}{}%
+\contentsline {subsubsection}{\numberline {6.6.3.1}CreateObstacles()}{29}{}%
+\contentsline {subsubsection}{\numberline {6.6.3.2}Draw()}{29}{}%
+\contentsline {subsubsection}{\numberline {6.6.3.3}HandleInput()}{29}{}%
+\contentsline {subsubsection}{\numberline {6.6.3.4}Reset()}{30}{}%
+\contentsline {subsubsection}{\numberline {6.6.3.5}Update()}{30}{}%
+\contentsline {subsection}{\numberline {6.6.4}Member Data Documentation}{30}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.1}alienSpawnInterval}{30}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.2}highscore}{30}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.3}lives}{30}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.4}music}{30}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.5}run}{30}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.6}score}{31}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.7}timeLastAlienFiredA}{31}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.8}timeLastAlienFiredB}{31}{}%
+\contentsline {subsubsection}{\numberline {6.6.4.9}timeLastAlienFiredC}{31}{}%
+\contentsline {section}{\numberline {6.7}Laser Class Reference}{31}{}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{32}{}%
+\contentsline {subsection}{\numberline {6.7.2}Constructor \& Destructor Documentation}{32}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}Laser()}{32}{}%
+\contentsline {subsection}{\numberline {6.7.3}Member Function Documentation}{32}{}%
+\contentsline {subsubsection}{\numberline {6.7.3.1}Draw()}{32}{}%
+\contentsline {subsubsection}{\numberline {6.7.3.2}getRect()}{32}{}%
+\contentsline {subsubsection}{\numberline {6.7.3.3}Update()}{33}{}%
+\contentsline {subsection}{\numberline {6.7.4}Member Data Documentation}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.4.1}active}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.4.2}position}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.4.3}velocity}{33}{}%
+\contentsline {section}{\numberline {6.8}Mystery\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ship Class Reference}{33}{}%
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{34}{}%
+\contentsline {subsection}{\numberline {6.8.2}Constructor \& Destructor Documentation}{34}{}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}MysteryShip()}{34}{}%
+\contentsline {subsubsection}{\numberline {6.8.2.2}$\sim $MysteryShip()}{34}{}%
+\contentsline {subsection}{\numberline {6.8.3}Member Function Documentation}{34}{}%
+\contentsline {subsubsection}{\numberline {6.8.3.1}Draw()}{34}{}%
+\contentsline {subsubsection}{\numberline {6.8.3.2}FireLasers()}{34}{}%
+\contentsline {subsubsection}{\numberline {6.8.3.3}getRect()}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.3.4}Spawn()}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.3.5}Update()}{35}{}%
+\contentsline {subsection}{\numberline {6.8.4}Member Data Documentation}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.4.1}alive}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.4.2}lastFireTime}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.4.3}mlasers}{35}{}%
+\contentsline {section}{\numberline {6.9}Obstacle Class Reference}{36}{}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{36}{}%
+\contentsline {subsection}{\numberline {6.9.2}Constructor \& Destructor Documentation}{36}{}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}Obstacle()}{36}{}%
+\contentsline {subsection}{\numberline {6.9.3}Member Function Documentation}{37}{}%
+\contentsline {subsubsection}{\numberline {6.9.3.1}Draw()}{37}{}%
+\contentsline {subsection}{\numberline {6.9.4}Member Data Documentation}{37}{}%
+\contentsline {subsubsection}{\numberline {6.9.4.1}blocks}{37}{}%
+\contentsline {subsubsection}{\numberline {6.9.4.2}grid}{37}{}%
+\contentsline {subsubsection}{\numberline {6.9.4.3}position}{37}{}%
+\contentsline {section}{\numberline {6.10}Spaceship Class Reference}{38}{}%
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{38}{}%
+\contentsline {subsection}{\numberline {6.10.2}Constructor \& Destructor Documentation}{38}{}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}Spaceship()}{38}{}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}$\sim $Spaceship()}{39}{}%
+\contentsline {subsection}{\numberline {6.10.3}Member Function Documentation}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.1}Draw()}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.2}FireLaser()}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.3}getRect()}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.4}MoveDown()}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.5}MoveLeft()}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.6}MoveRight()}{40}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.7}MoveUp()}{40}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.8}Reset()}{40}{}%
+\contentsline {subsection}{\numberline {6.10.4}Member Data Documentation}{40}{}%
+\contentsline {subsubsection}{\numberline {6.10.4.1}lasers}{40}{}%
+\contentsline {subsubsection}{\numberline {6.10.4.2}movementDirection}{40}{}%
+\contentsline {chapter}{\numberline {7}File Documentation}{41}{}%
+\contentsline {section}{\numberline {7.1}alien.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{41}{}%
+\contentsline {section}{\numberline {7.2}alien.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{41}{}%
+\contentsline {section}{\numberline {7.3}alien.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{41}{}%
+\contentsline {section}{\numberline {7.4}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{42}{}%
+\contentsline {section}{\numberline {7.5}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{42}{}%
+\contentsline {section}{\numberline {7.6}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{42}{}%
+\contentsline {section}{\numberline {7.7}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{42}{}%
+\contentsline {section}{\numberline {7.8}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{43}{}%
+\contentsline {section}{\numberline {7.9}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{43}{}%
+\contentsline {section}{\numberline {7.10}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{43}{}%
+\contentsline {section}{\numberline {7.11}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{43}{}%
+\contentsline {section}{\numberline {7.12}alien\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{44}{}%
+\contentsline {section}{\numberline {7.13}block.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{44}{}%
+\contentsline {section}{\numberline {7.14}block.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{44}{}%
+\contentsline {section}{\numberline {7.15}block.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{45}{}%
+\contentsline {section}{\numberline {7.16}game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{45}{}%
+\contentsline {section}{\numberline {7.17}game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{45}{}%
+\contentsline {section}{\numberline {7.18}game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{}%
+\contentsline {section}{\numberline {7.19}laser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{47}{}%
+\contentsline {section}{\numberline {7.20}laser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{47}{}%
+\contentsline {section}{\numberline {7.21}laser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{48}{}%
+\contentsline {section}{\numberline {7.22}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{48}{}%
+\contentsline {subsection}{\numberline {7.22.1}Function Documentation}{49}{}%
+\contentsline {subsubsection}{\numberline {7.22.1.1}FormatWithLeadingZeros()}{49}{}%
+\contentsline {subsubsection}{\numberline {7.22.1.2}main()}{49}{}%
+\contentsline {section}{\numberline {7.23}mysteryship.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{49}{}%
+\contentsline {section}{\numberline {7.24}mysteryship.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{49}{}%
+\contentsline {section}{\numberline {7.25}mysteryship.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{50}{}%
+\contentsline {section}{\numberline {7.26}obstacle.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{50}{}%
+\contentsline {section}{\numberline {7.27}obstacle.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{50}{}%
+\contentsline {section}{\numberline {7.28}obstacle.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{51}{}%
+\contentsline {section}{\numberline {7.29}spaceship.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{51}{}%
+\contentsline {section}{\numberline {7.30}spaceship.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{51}{}%
+\contentsline {section}{\numberline {7.31}spaceship.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{52}{}%
+\contentsline {chapter}{Index}{53}{}%

@@ -1,0 +1,232 @@
+\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Klasa zarządzająca logiką i stanem gry.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Game} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{Game}{p.}{class_game}. Inicjalizuje wszystkie komponenty gry, ładuje zasoby audio i tekstury. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Game} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxyref{Game}{p.}{class_game}. Zwalnia załadowane zasoby, takie jak dźwięki i tekstury. \end{DoxyCompactList}\item 
+void \textbf{ Draw} ()
+\begin{DoxyCompactList}\small\item\em Rysuje wszystkie elementy gry na ekranie. Obejmuje rysowanie statku gracza, obcych, laserów, przeszkód, statku-\/zagadki oraz HUD (wynik, życia). \end{DoxyCompactList}\item 
+void \textbf{ Update} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan gry. Obsługuje ruchy obcych, laserów, statku-\/zagadki, sprawdzanie kolizji, zarządzanie spawnowaniem obcych i laserów. \end{DoxyCompactList}\item 
+void \textbf{ Handle\+Input} ()
+\begin{DoxyCompactList}\small\item\em Obsługuje wejście od gracza. Przetwarza naciśnięcia klawiszy do sterowania statkiem kosmicznym gracza i strzelania. \end{DoxyCompactList}\item 
+void \textbf{ Reset} ()
+\begin{DoxyCompactList}\small\item\em Resetuje stan gry do początkowego. Używane po zakończeniu gry w celu rozpoczęcia nowej rundy. \end{DoxyCompactList}\item 
+std\+::vector$<$ \textbf{ Obstacle} $>$ \textbf{ Create\+Obstacles} ()
+\begin{DoxyCompactList}\small\item\em Tworzy przeszkody na planszy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ run}
+\begin{DoxyCompactList}\small\item\em Flaga wskazująca, czy gra jest uruchomiona. \end{DoxyCompactList}\item 
+int \textbf{ lives}
+\begin{DoxyCompactList}\small\item\em Liczba pozostałych żyć gracza. \end{DoxyCompactList}\item 
+int \textbf{ score}
+\begin{DoxyCompactList}\small\item\em Aktualny wynik gracza. \end{DoxyCompactList}\item 
+int \textbf{ highscore}
+\begin{DoxyCompactList}\small\item\em Najwyższy osiągnięty wynik. \end{DoxyCompactList}\item 
+double \textbf{ time\+Last\+Alien\+FiredA}
+\begin{DoxyCompactList}\small\item\em Czas ostatniego strzału obcego typu A. \end{DoxyCompactList}\item 
+double \textbf{ time\+Last\+Alien\+FiredB}
+\begin{DoxyCompactList}\small\item\em Czas ostatniego strzału obcego typu B. \end{DoxyCompactList}\item 
+double \textbf{ time\+Last\+Alien\+FiredC}
+\begin{DoxyCompactList}\small\item\em Czas ostatniego strzału obcego typu C. \end{DoxyCompactList}\item 
+Music \textbf{ music}
+\begin{DoxyCompactList}\small\item\em Muzyka w tle gry. \end{DoxyCompactList}\item 
+float \textbf{ alien\+Spawn\+Interval}
+\begin{DoxyCompactList}\small\item\em Interwał spawnowania obcych w sekundach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa zarządzająca logiką i stanem gry. 
+
+Klasa \doxyref{Game}{p.}{class_game} obsługuje inicjalizację, aktualizację i rysowanie wszystkich elementów gry, takich jak statek kosmiczny, obcy, pociski, przeszkody i statek-\/zagadka. Zarządza również punktacją, życiem gracza, logiką menu oraz zapisem/odczytem najlepszego wyniku. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{class_game_ad59df6562a58a614fda24622d3715b65} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{Game()}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxyref{Game}{p.}{class_game}. Inicjalizuje wszystkie komponenty gry, ładuje zasoby audio i tekstury. 
+
+\label{class_game_ae3d112ca6e0e55150d2fdbc704474530} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{$\sim$Game()}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxyref{Game}{p.}{class_game}. Zwalnia załadowane zasoby, takie jak dźwięki i tekstury. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\label{class_game_abec4643c531fea04518445653b5df0f8} 
+\index{Game@{Game}!CreateObstacles@{CreateObstacles}}
+\index{CreateObstacles@{CreateObstacles}!Game@{Game}}
+\doxysubsubsection{CreateObstacles()}
+{\footnotesize\ttfamily std\+::vector$<$ \textbf{ Obstacle} $>$ Game\+::\+Create\+Obstacles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tworzy przeszkody na planszy. 
+
+\begin{DoxyReturn}{Returns}
+Wektor obiektów \doxyref{Obstacle}{p.}{class_obstacle} reprezentujących przeszkody. 
+\end{DoxyReturn}
+\label{class_game_aad2c20e2c5529244095c50c238911e30} 
+\index{Game@{Game}!Draw@{Draw}}
+\index{Draw@{Draw}!Game@{Game}}
+\doxysubsubsection{Draw()}
+{\footnotesize\ttfamily void Game\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rysuje wszystkie elementy gry na ekranie. Obejmuje rysowanie statku gracza, obcych, laserów, przeszkód, statku-\/zagadki oraz HUD (wynik, życia). 
+
+\label{class_game_a6cb82eaece4e30724f3fe4e0d4bde5fc} 
+\index{Game@{Game}!HandleInput@{HandleInput}}
+\index{HandleInput@{HandleInput}!Game@{Game}}
+\doxysubsubsection{HandleInput()}
+{\footnotesize\ttfamily void Game\+::\+Handle\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obsługuje wejście od gracza. Przetwarza naciśnięcia klawiszy do sterowania statkiem kosmicznym gracza i strzelania. 
+
+\label{class_game_abb3fb4b64092158706e7723cf8268e6a} 
+\index{Game@{Game}!Reset@{Reset}}
+\index{Reset@{Reset}!Game@{Game}}
+\doxysubsubsection{Reset()}
+{\footnotesize\ttfamily void Game\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resetuje stan gry do początkowego. Używane po zakończeniu gry w celu rozpoczęcia nowej rundy. 
+
+\label{class_game_a1c5373c68261c54aff03e6abe40fee52} 
+\index{Game@{Game}!Update@{Update}}
+\index{Update@{Update}!Game@{Game}}
+\doxysubsubsection{Update()}
+{\footnotesize\ttfamily void Game\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan gry. Obsługuje ruchy obcych, laserów, statku-\/zagadki, sprawdzanie kolizji, zarządzanie spawnowaniem obcych i laserów. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{class_game_a03479ea85ff0e30b561e51035085eab3} 
+\index{Game@{Game}!alienSpawnInterval@{alienSpawnInterval}}
+\index{alienSpawnInterval@{alienSpawnInterval}!Game@{Game}}
+\doxysubsubsection{alienSpawnInterval}
+{\footnotesize\ttfamily float Game\+::alien\+Spawn\+Interval}
+
+
+
+Interwał spawnowania obcych w sekundach. 
+
+\label{class_game_a922eaaad2fd28c93d5b9a2c48f5d88c6} 
+\index{Game@{Game}!highscore@{highscore}}
+\index{highscore@{highscore}!Game@{Game}}
+\doxysubsubsection{highscore}
+{\footnotesize\ttfamily int Game\+::highscore}
+
+
+
+Najwyższy osiągnięty wynik. 
+
+\label{class_game_aa65dc796ac407c6e5ffaab155530c90a} 
+\index{Game@{Game}!lives@{lives}}
+\index{lives@{lives}!Game@{Game}}
+\doxysubsubsection{lives}
+{\footnotesize\ttfamily int Game\+::lives}
+
+
+
+Liczba pozostałych żyć gracza. 
+
+\label{class_game_aaea1edb9042f804aea528ab5fe2d9b32} 
+\index{Game@{Game}!music@{music}}
+\index{music@{music}!Game@{Game}}
+\doxysubsubsection{music}
+{\footnotesize\ttfamily Music Game\+::music}
+
+
+
+Muzyka w tle gry. 
+
+\label{class_game_ace663fbc1ed287f3ba3db845dc411620} 
+\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\doxysubsubsection{run}
+{\footnotesize\ttfamily bool Game\+::run}
+
+
+
+Flaga wskazująca, czy gra jest uruchomiona. 
+
+\label{class_game_afaf9404196df9968103d5b0d0ad08139} 
+\index{Game@{Game}!score@{score}}
+\index{score@{score}!Game@{Game}}
+\doxysubsubsection{score}
+{\footnotesize\ttfamily int Game\+::score}
+
+
+
+Aktualny wynik gracza. 
+
+\label{class_game_a901b761bb8c72ef79f9c6e3f1e07afe5} 
+\index{Game@{Game}!timeLastAlienFiredA@{timeLastAlienFiredA}}
+\index{timeLastAlienFiredA@{timeLastAlienFiredA}!Game@{Game}}
+\doxysubsubsection{timeLastAlienFiredA}
+{\footnotesize\ttfamily double Game\+::time\+Last\+Alien\+FiredA}
+
+
+
+Czas ostatniego strzału obcego typu A. 
+
+\label{class_game_a7e6ebd214141bfb2dd2d47a5be20d0e6} 
+\index{Game@{Game}!timeLastAlienFiredB@{timeLastAlienFiredB}}
+\index{timeLastAlienFiredB@{timeLastAlienFiredB}!Game@{Game}}
+\doxysubsubsection{timeLastAlienFiredB}
+{\footnotesize\ttfamily double Game\+::time\+Last\+Alien\+FiredB}
+
+
+
+Czas ostatniego strzału obcego typu B. 
+
+\label{class_game_abb87ad55094b571151a18872a31d5ae3} 
+\index{Game@{Game}!timeLastAlienFiredC@{timeLastAlienFiredC}}
+\index{timeLastAlienFiredC@{timeLastAlienFiredC}!Game@{Game}}
+\doxysubsubsection{timeLastAlienFiredC}
+{\footnotesize\ttfamily double Game\+::time\+Last\+Alien\+FiredC}
+
+
+
+Czas ostatniego strzału obcego typu C. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ game.\+h}\item 
+\textbf{ game.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,241 @@
+\doxysection{alienC Class Reference}
+\label{classalien_c}\index{alienC@{alienC}}
+
+
+Klasa reprezentująca trzeci typ obcego (\doxyref{Alien}{p.}{class_alien} C).  
+
+
+
+
+{\ttfamily \#include $<$alien\+C.\+h$>$}
+
+Inheritance diagram for alienC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classalien_c}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ alienC} (int \textbf{ edge}, int \textbf{ type}, Vector2 \textbf{ position}, Vector2 \textbf{ velocity})
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{alienC}{p.}{classalien_c}. \end{DoxyCompactList}\item 
+void \textbf{ Update} () override
+\begin{DoxyCompactList}\small\item\em Aktualizuje pozycję obcego. \end{DoxyCompactList}\item 
+void \textbf{ Draw} () override
+\begin{DoxyCompactList}\small\item\em Rysuje obcego na ekranie. \end{DoxyCompactList}\item 
+bool \textbf{ Is\+Off\+Screen} () const override
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy obcy jest poza ekranem. \end{DoxyCompactList}\item 
+Rectangle \textbf{ get\+Rect} () const override
+\begin{DoxyCompactList}\small\item\em Zwraca prostokąt kolizji obcego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \textbf{ Alien}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Alien} (int \textbf{ edge}, int \textbf{ type}, Vector2 \textbf{ position}, Vector2 \textbf{ velocity})
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{Alien}{p.}{class_alien}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ Load\+Images} ()
+\begin{DoxyCompactList}\small\item\em Statyczna metoda do ładowania wszystkich tekstur dla \doxyref{Alien}{p.}{class_alien} C. \end{DoxyCompactList}\item 
+static void \textbf{ Unload\+Images} ()
+\begin{DoxyCompactList}\small\item\em Statyczna metoda do rozładowywania wszystkich tekstur dla \doxyref{Alien}{p.}{class_alien} C. \end{DoxyCompactList}\item 
+static Texture2D \& \textbf{ Get\+Image} (int \textbf{ edge})
+\begin{DoxyCompactList}\small\item\em Statyczna metoda zwracająca referencję do tekstury \doxyref{Alien}{p.}{class_alien} C na podstawie krawędzi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Texture2D \textbf{ alien\+CImages} [3] = \{\}
+\begin{DoxyCompactList}\small\item\em Statyczna tablica przechowująca tekstury dla \doxyref{Alien}{p.}{class_alien} C. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \textbf{ Alien}}
+\begin{DoxyCompactItemize}
+\item 
+static Texture2D \textbf{ alien\+Images} [3] = \{\}
+\begin{DoxyCompactList}\small\item\em Statyczna tablica przechowująca tekstury dla różnych typów obcych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \textbf{ Alien}}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ type}
+\begin{DoxyCompactList}\small\item\em Typ obcego. \end{DoxyCompactList}\item 
+int \textbf{ edge}
+\begin{DoxyCompactList}\small\item\em Krawędź, z której obcy się pojawił. \end{DoxyCompactList}\item 
+Vector2 \textbf{ position}
+\begin{DoxyCompactList}\small\item\em Pozycja obcego na ekranie. \end{DoxyCompactList}\item 
+Vector2 \textbf{ velocity}
+\begin{DoxyCompactList}\small\item\em Wektor prędkości obcego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca trzeci typ obcego (\doxyref{Alien}{p.}{class_alien} C). 
+
+
+\begin{DoxyItemize}
+\item Dziedziczy po klasie \doxyref{Alien}{p.}{class_alien} i implementuje jej czysto wirtualne metody. Obsługuje ładowanie i rozładowywanie własnych tekstur oraz specyficzne zachowanie. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classalien_c_aa5db54bf521b9f95a7deecb8706defc7} 
+\index{alienC@{alienC}!alienC@{alienC}}
+\index{alienC@{alienC}!alienC@{alienC}}
+\doxysubsubsection{alienC()}
+{\footnotesize\ttfamily alien\+C\+::alienC (\begin{DoxyParamCaption}\item[{int}]{edge,  }\item[{int}]{type,  }\item[{Vector2}]{position,  }\item[{Vector2}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxyref{alienC}{p.}{classalien_c}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge} & Krawędź, z której obcy się pojawi (1\+: lewo, 2\+: prawo, 3\+: góra). \\
+\hline
+{\em type} & Typ obcego (dla \doxyref{alienC}{p.}{classalien_c} zawsze 0, ale zachowane dla spójności z klasą bazową). \\
+\hline
+{\em position} & Pozycja początkowa obcego (wektor X, Y). \\
+\hline
+{\em velocity} & Prędkość i kierunek ruchu obcego (wektor X, Y). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\label{classalien_c_abe4d31006260585411a15adcddb1d494} 
+\index{alienC@{alienC}!Draw@{Draw}}
+\index{Draw@{Draw}!alienC@{alienC}}
+\doxysubsubsection{Draw()}
+{\footnotesize\ttfamily void alien\+C\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rysuje obcego na ekranie. 
+
+
+\begin{DoxyItemize}
+\item Implementacja metody wirtualnej z klasy bazowej \doxyref{Alien}{p.}{class_alien}. Wykorzystuje teksturę odpowiadającą wartości \textquotesingle{}edge\textquotesingle{} obcego. 
+\end{DoxyItemize}
+
+Implements \textbf{ Alien} \doxyref{}{p.}{class_alien_af379bb6ecf4bb751c518051304205fe9}.
+
+\label{classalien_c_a55a8ff09553ae04324bf945abe426260} 
+\index{alienC@{alienC}!GetImage@{GetImage}}
+\index{GetImage@{GetImage}!alienC@{alienC}}
+\doxysubsubsection{GetImage()}
+{\footnotesize\ttfamily Texture2D \& alien\+C\+::\+Get\+Image (\begin{DoxyParamCaption}\item[{int}]{edge }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Statyczna metoda zwracająca referencję do tekstury \doxyref{Alien}{p.}{class_alien} C na podstawie krawędzi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge} & Krawędź (1, 2 lub 3) określająca, którą teksturę zwrócić. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu Texture2D. 
+\end{DoxyReturn}
+\label{classalien_c_a28f40c53ca30702481ff913712e1fd88} 
+\index{alienC@{alienC}!getRect@{getRect}}
+\index{getRect@{getRect}!alienC@{alienC}}
+\doxysubsubsection{getRect()}
+{\footnotesize\ttfamily Rectangle alien\+C\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Zwraca prostokąt kolizji obcego. 
+
+\begin{DoxyReturn}{Returns}
+Obiekt Rectangle reprezentujący obszar kolizji obcego.
+\begin{DoxyItemize}
+\item Implementacja metody wirtualnej z klasy bazowej \doxyref{Alien}{p.}{class_alien}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \textbf{ Alien} \doxyref{}{p.}{class_alien_adaa198f963aed8a01f2018aefdc0705c}.
+
+\label{classalien_c_a985c1a483c8c17d0dd4e746fd5acc467} 
+\index{alienC@{alienC}!IsOffScreen@{IsOffScreen}}
+\index{IsOffScreen@{IsOffScreen}!alienC@{alienC}}
+\doxysubsubsection{IsOffScreen()}
+{\footnotesize\ttfamily bool alien\+C\+::\+Is\+Off\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sprawdza, czy obcy jest poza ekranem. 
+
+\begin{DoxyReturn}{Returns}
+true jeśli obcy jest poza granicami ekranu, false w przeciwnym razie.
+\begin{DoxyItemize}
+\item Implementacja metody wirtualnej z klasy bazowej \doxyref{Alien}{p.}{class_alien}. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \textbf{ Alien} \doxyref{}{p.}{class_alien_ab0882273af15ff1ce4ba8e9b689f5195}.
+
+\label{classalien_c_af959a96cafe698d1db29b65456c23f71} 
+\index{alienC@{alienC}!LoadImages@{LoadImages}}
+\index{LoadImages@{LoadImages}!alienC@{alienC}}
+\doxysubsubsection{LoadImages()}
+{\footnotesize\ttfamily void alien\+C\+::\+Load\+Images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Statyczna metoda do ładowania wszystkich tekstur dla \doxyref{Alien}{p.}{class_alien} C. 
+
+
+\begin{DoxyItemize}
+\item Tekstury są ładowane tylko raz i przechowywane w statycznej tablicy {\ttfamily alien\+CImages}. 
+\end{DoxyItemize}\label{classalien_c_a4c2039f749055cc8866d768250685bff} 
+\index{alienC@{alienC}!UnloadImages@{UnloadImages}}
+\index{UnloadImages@{UnloadImages}!alienC@{alienC}}
+\doxysubsubsection{UnloadImages()}
+{\footnotesize\ttfamily void alien\+C\+::\+Unload\+Images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Statyczna metoda do rozładowywania wszystkich tekstur dla \doxyref{Alien}{p.}{class_alien} C. 
+
+
+\begin{DoxyItemize}
+\item Zwolnienie zasobów tekstur. 
+\end{DoxyItemize}\label{classalien_c_ac3a184c8fca719fd045aaedf62399e50} 
+\index{alienC@{alienC}!Update@{Update}}
+\index{Update@{Update}!alienC@{alienC}}
+\doxysubsubsection{Update()}
+{\footnotesize\ttfamily void alien\+C\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Aktualizuje pozycję obcego. 
+
+
+\begin{DoxyItemize}
+\item Implementacja metody wirtualnej z klasy bazowej \doxyref{Alien}{p.}{class_alien}. 
+\end{DoxyItemize}
+
+Implements \textbf{ Alien} \doxyref{}{p.}{class_alien_a376fd8616ed72bbd4c4ee010687935c5}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classalien_c_ac365391853ccfa9eab1f2c5e93a8ddfd} 
+\index{alienC@{alienC}!alienCImages@{alienCImages}}
+\index{alienCImages@{alienCImages}!alienC@{alienC}}
+\doxysubsubsection{alienCImages}
+{\footnotesize\ttfamily Texture2D alien\+C\+::alien\+CImages = \{\}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Statyczna tablica przechowująca tekstury dla \doxyref{Alien}{p.}{class_alien} C. 
+
+
+\begin{DoxyItemize}
+\item Tablica zawiera trzy tekstury odpowiadające różnym krawędziom (edge). 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ alien\+C.\+h}\item 
+\textbf{ alien\+C.\+cpp}\end{DoxyCompactItemize}

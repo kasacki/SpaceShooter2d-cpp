@@ -1,0 +1,129 @@
+\doxysection{Obstacle Class Reference}
+\label{class_obstacle}\index{Obstacle@{Obstacle}}
+
+
+Klasa reprezentująca przeszkodę złożoną z bloków.  
+
+
+
+
+{\ttfamily \#include $<$obstacle.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Obstacle} (Vector2 \textbf{ position})
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{Obstacle}{p.}{class_obstacle}. \end{DoxyCompactList}\item 
+void \textbf{ Draw} ()
+\begin{DoxyCompactList}\small\item\em Rysuje wszystkie aktywne bloki należące do przeszkody. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \textbf{ position}
+\begin{DoxyCompactList}\small\item\em Pozycja lewego górnego rogu przeszkody. \end{DoxyCompactList}\item 
+std\+::vector$<$ \textbf{ Block} $>$ \textbf{ blocks}
+\begin{DoxyCompactList}\small\item\em Wektor bloków tworzących przeszkodę. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \textbf{ grid}
+\begin{DoxyCompactList}\small\item\em Statyczna siatka (mapa) definiująca kształt przeszkody. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca przeszkodę złożoną z bloków. 
+
+
+\begin{DoxyItemize}
+\item Przeszkody służą jako osłona dla gracza i mogą być niszczone przez lasery. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{class_obstacle_a6e5fc89f967d947134ed3c7d8c3cf923} 
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\doxysubsubsection{Obstacle()}
+{\footnotesize\ttfamily Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}\item[{Vector2}]{position }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxyref{Obstacle}{p.}{class_obstacle}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pozycja początkowa lewego górnego rogu przeszkody.
+\begin{DoxyItemize}
+\item Na podstawie statycznej siatki {\ttfamily grid} tworzy wektor obiektów \doxyref{Block}{p.}{class_block}, które składają się na przeszkodę. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\label{class_obstacle_a4c3b6dc8c21e5c84e949f770853e9792} 
+\index{Obstacle@{Obstacle}!Draw@{Draw}}
+\index{Draw@{Draw}!Obstacle@{Obstacle}}
+\doxysubsubsection{Draw()}
+{\footnotesize\ttfamily void Obstacle\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rysuje wszystkie aktywne bloki należące do przeszkody. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{class_obstacle_a754185853e00fa4d2eb3b0c2d7f10a89} 
+\index{Obstacle@{Obstacle}!blocks@{blocks}}
+\index{blocks@{blocks}!Obstacle@{Obstacle}}
+\doxysubsubsection{blocks}
+{\footnotesize\ttfamily std\+::vector$<$\textbf{ Block}$>$ Obstacle\+::blocks}
+
+
+
+Wektor bloków tworzących przeszkodę. 
+
+\label{class_obstacle_a88fee4e70f6cfde936c2dd1a4a814914} 
+\index{Obstacle@{Obstacle}!grid@{grid}}
+\index{grid@{grid}!Obstacle@{Obstacle}}
+\doxysubsubsection{grid}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ int $>$ $>$ Obstacle\+::grid\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{0,\ 0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 1,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 0\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Statyczna siatka (mapa) definiująca kształt przeszkody. 
+
+
+\begin{DoxyItemize}
+\item Wartość 1 oznacza aktywny blok, 0 oznacza pustą przestrzeń. 
+\end{DoxyItemize}\label{class_obstacle_a44db620bac12f597327573a33ac31078} 
+\index{Obstacle@{Obstacle}!position@{position}}
+\index{position@{position}!Obstacle@{Obstacle}}
+\doxysubsubsection{position}
+{\footnotesize\ttfamily Vector2 Obstacle\+::position}
+
+
+
+Pozycja lewego górnego rogu przeszkody. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ obstacle.\+h}\item 
+\textbf{ obstacle.\+cpp}\end{DoxyCompactItemize}

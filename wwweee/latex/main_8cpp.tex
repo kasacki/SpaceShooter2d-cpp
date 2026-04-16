@@ -1,0 +1,54 @@
+\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$raylib.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}game.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \textbf{ Format\+With\+Leading\+Zeros} (int number, int width)
+\begin{DoxyCompactList}\small\item\em Formatuje liczbę całkowitą, dodając zera wiodące. \end{DoxyCompactList}\item 
+int \textbf{ main} ()
+\begin{DoxyCompactList}\small\item\em Główna funkcja programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\label{main_8cpp_ab6fed281d0e5b171fc50b1301897f453} 
+\index{main.cpp@{main.cpp}!FormatWithLeadingZeros@{FormatWithLeadingZeros}}
+\index{FormatWithLeadingZeros@{FormatWithLeadingZeros}!main.cpp@{main.cpp}}
+\doxysubsubsection{FormatWithLeadingZeros()}
+{\footnotesize\ttfamily std\+::string Format\+With\+Leading\+Zeros (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Formatuje liczbę całkowitą, dodając zera wiodące. 
+
+Funkcja przyjmuje liczbę i pożądaną szerokość ciągu znaków. Jeśli liczba jest krótsza niż {\ttfamily width}, zostaną dodane zera z przodu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & Liczba do sformatowania. \\
+\hline
+{\em width} & Całkowita szerokość wynikowego ciągu znaków. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sformatowany ciąg znaków z zerami wiodącymi. 
+\end{DoxyReturn}
+\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Główna funkcja programu. 
+
+Inicjalizuje okno gry, zasoby audio, ładuje czcionki i tekstury, a następnie zarządza główną pętlą gry, w tym menu początkowym, wyświetlaniem najlepszego wyniku, aktualizacjami gry i rysowaniem. Obsługuje również stany gry (menu, rozgrywka, koniec gry) i nawigację między nimi.
+
+\begin{DoxyReturn}{Returns}
+Kod zakończenia programu. 
+\end{DoxyReturn}

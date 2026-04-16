@@ -1,0 +1,81 @@
+\doxysection{Block Class Reference}
+\label{class_block}\index{Block@{Block}}
+
+
+Klasa reprezentująca pojedynczy blok, będący częścią przeszkody.  
+
+
+
+
+{\ttfamily \#include $<$block.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Block} (Vector2 position)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{Block}{p.}{class_block}. \end{DoxyCompactList}\item 
+void \textbf{ Draw} ()
+\begin{DoxyCompactList}\small\item\em Rysuje blok na ekranie. \end{DoxyCompactList}\item 
+Rectangle \textbf{ get\+Rect} ()
+\begin{DoxyCompactList}\small\item\em Zwraca prostokąt kolizji bloku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca pojedynczy blok, będący częścią przeszkody. 
+
+
+\begin{DoxyItemize}
+\item Bloki są podstawowymi elementami składającymi się na przeszkody, które mogą zostać zniszczone przez lasery. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{class_block_acfded44f2b34c8dbf2febb3b2cde4291} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\doxysubsubsection{Block()}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}\item[{Vector2}]{position }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxyref{Block}{p.}{class_block}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pozycja bloku (wektor X, Y). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\label{class_block_a955ced0693bbd22b2a2479e55bb5180d} 
+\index{Block@{Block}!Draw@{Draw}}
+\index{Draw@{Draw}!Block@{Block}}
+\doxysubsubsection{Draw()}
+{\footnotesize\ttfamily void Block\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rysuje blok na ekranie. 
+
+
+\begin{DoxyItemize}
+\item Blok jest rysowany jako mały prostokąt w określonym kolorze. 
+\end{DoxyItemize}\label{class_block_a7141665b07f2a9d306570406a693e096} 
+\index{Block@{Block}!getRect@{getRect}}
+\index{getRect@{getRect}!Block@{Block}}
+\doxysubsubsection{getRect()}
+{\footnotesize\ttfamily Rectangle Block\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca prostokąt kolizji bloku. 
+
+\begin{DoxyReturn}{Returns}
+Obiekt Rectangle reprezentujący obszar kolizji bloku. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ block.\+h}\item 
+\textbf{ block.\+cpp}\end{DoxyCompactItemize}

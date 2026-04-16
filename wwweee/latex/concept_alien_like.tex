@@ -1,0 +1,35 @@
+\doxysection{Alien\+Like Concept Reference}
+\label{concept_alien_like}\index{AlienLike@{AlienLike}}
+
+
+Koncept definiujący wymagania dla typów "{}\+Alien-\/podobnych"{}.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+\doxysubsection{Concept definition}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\textcolor{keyword}{concept\ }AlienLike\ =\ \ \textcolor{keyword}{requires}(T\ alien)\ \{}
+\DoxyCodeLine{\ \ \ \ \{\ alien.position\ \}\ -\/>\ std::convertible\_to<Vector2>;}
+\DoxyCodeLine{\ \ \ \ \{\ alien.velocity\ \}\ -\/>\ std::convertible\_to<Vector2>;}
+\DoxyCodeLine{\ \ \ \ \{\ alien.edge\ \}\ -\/>\ std::convertible\_to<int>;}
+\DoxyCodeLine{\ \ \ \ \{\ T::GetImage(alien.edge)\ \}\ -\/>\ std::convertible\_to<Texture2D\&>;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Detailed Description}
+Koncept definiujący wymagania dla typów "{}\+Alien-\/podobnych"{}. 
+
+Używany do zapewnienia, że typy używane w szablonach funkcji związanych z obcymi posiadają niezbędne pola i metody. Wymaga pól\+: {\ttfamily position} (Vector2), {\ttfamily velocity} (Vector2), {\ttfamily edge} (int). Wymaga statycznej metody\+: {\ttfamily Get\+Image(int edge)} zwracającej {\ttfamily Texture2D\&}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Typ, który ma zostać sprawdzony pod kątem zgodności z konceptem \doxyref{Alien\+Like}{p.}{concept_alien_like}. \\
+\hline
+\end{DoxyTemplParams}

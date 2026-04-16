@@ -1,0 +1,113 @@
+\doxysection{game.\+h}
+\label{game_8h_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAME\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAME\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}alien.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}obstacle.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}spaceship.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}mysteryship.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}laser.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}alienA.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}alienB.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}alienC.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <raylib.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <concepts>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <ranges>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <iterator>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <filesystem>}\ \textcolor{comment}{//\ Dodano\ to\ do\ 'namespace\ fs\ =\ std::filesystem;'}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00035\ \textcolor{keyword}{concept\ }AlienLike\ =\ \textcolor{keyword}{requires}(T\ alien)\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \{\ alien.position\ \}\ -\/>\ std::convertible\_to<Vector2>;}
+\DoxyCodeLine{00037\ \ \ \ \ \{\ alien.velocity\ \}\ -\/>\ std::convertible\_to<Vector2>;}
+\DoxyCodeLine{00038\ \ \ \ \ \{\ alien.edge\ \}\ -\/>\ std::convertible\_to<int>;}
+\DoxyCodeLine{00039\ \ \ \ \ \{\ T::GetImage(alien.edge)\ \}\ -\/>\ std::convertible\_to<Texture2D\&>;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{namespace\ }fs\ =\ std::filesystem;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{class\ }Game\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ Game();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \string~Game();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ Draw();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ Update();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ HandleInput();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{bool}\ run;\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{int}\ lives;\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ score;\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{int}\ highscore;\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{double}\ timeLastAlienFiredA;\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{double}\ timeLastAlienFiredB;\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{double}\ timeLastAlienFiredC;\ }
+\DoxyCodeLine{00091\ \ \ \ \ Music\ music;\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ Reset();}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00103\ \ \ \ \ std::vector<Obstacle>\ CreateObstacles();}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{float}\ alienSpawnInterval;\ }
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{template}\ <AlienLike\ AlienType>}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ AlienShootLaserFrom(std::vector<AlienType>\&\ aliens,\ \textcolor{keywordtype}{double}\&\ timeLastShot,\ std::vector<Laser>\&\ laserList,\ \textcolor{keywordtype}{double}\ interval);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{template}\ <AlienLike\ AlienType>}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ HandleAlienObstacleCollision(std::vector<AlienType>\&\ aliens);}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{template}<AlienLike\ AlienType>}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ SpawnAlien(std::vector<AlienType>\&\ container);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ DeleteInactiveLasers();}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ CheckForCollisions();}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{void}\ GameOver();}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{void}\ InitGame();}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ checkForHighscore();}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ saveHighscoreToFile(\textcolor{keywordtype}{int}\ highscore);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{int}\ loadHighscoreFromFile();}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{void}\ DeleteOffScreenAliens();}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ Spaceship\ spaceship;\ }
+\DoxyCodeLine{00184\ \ \ \ \ std::vector<Obstacle>\ obstacles;\ }
+\DoxyCodeLine{00185\ \ \ \ \ std::vector<alienA>\ aliensA;\ }
+\DoxyCodeLine{00186\ \ \ \ \ std::vector<alienB>\ aliensB;\ }
+\DoxyCodeLine{00187\ \ \ \ \ std::vector<alienC>\ aliensC;\ }
+\DoxyCodeLine{00188\ \ \ \ \ std::vector<Alien*>\ aliensToRemove;\ }
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{int}\ currentSpawnType;\ }
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordtype}{int}\ randomType;\ }
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordtype}{bool}\ spawning;\ }
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordtype}{int}\ aliensDirection;\ }
+\DoxyCodeLine{00193\ \ \ \ \ std::vector<Laser>\ alienLasers;\ }
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ alienLaserShootInterval\ =\ 1.0;\ }
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordtype}{float}\ timeLastAlienFired;\ }
+\DoxyCodeLine{00196\ \ \ \ \ MysteryShip\ mysteryship;\ }
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordtype}{float}\ mysteryShipSpawnInterval;\ }
+\DoxyCodeLine{00198\ \ \ \ \ \textcolor{keywordtype}{float}\ timeLastSpawn;\ }
+\DoxyCodeLine{00199\ \ \ \ \ Sound\ explosionSound;\ }
+\DoxyCodeLine{00200\ \ \ \ \ Sound\ laserSound;\ }
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordtype}{float}\ alienSpawnTimer;\ }
+\DoxyCodeLine{00202\ \};}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

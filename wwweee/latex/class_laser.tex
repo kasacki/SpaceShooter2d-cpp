@@ -1,0 +1,137 @@
+\doxysection{Laser Class Reference}
+\label{class_laser}\index{Laser@{Laser}}
+
+
+Klasa reprezentująca pojedynczy laser w grze.  
+
+
+
+
+{\ttfamily \#include $<$laser.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Laser} (Vector2 \textbf{ position}, Vector2 \textbf{ velocity})
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{Laser}{p.}{class_laser}. \end{DoxyCompactList}\item 
+void \textbf{ Update} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje pozycję lasera i sprawdza, czy nie wyleciał poza ekran. \end{DoxyCompactList}\item 
+void \textbf{ Draw} ()
+\begin{DoxyCompactList}\small\item\em Rysuje laser na ekranie. \end{DoxyCompactList}\item 
+Rectangle \textbf{ get\+Rect} ()
+\begin{DoxyCompactList}\small\item\em Zwraca prostokąt kolizji lasera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \textbf{ position}
+\begin{DoxyCompactList}\small\item\em Pozycja lasera na ekranie. \end{DoxyCompactList}\item 
+Vector2 \textbf{ velocity}
+\begin{DoxyCompactList}\small\item\em Wektor prędkości lasera. \end{DoxyCompactList}\item 
+bool \textbf{ active}
+\begin{DoxyCompactList}\small\item\em Flaga określająca, czy laser jest aktywny (widoczny i kolizyjny). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca pojedynczy laser w grze. 
+
+
+\begin{DoxyItemize}
+\item Lasery mogą być wystrzeliwane zarówno przez gracza, jak i przez obcych. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{class_laser_a6cb5fb2fa5a57182c90c82c8b447c1ea} 
+\index{Laser@{Laser}!Laser@{Laser}}
+\index{Laser@{Laser}!Laser@{Laser}}
+\doxysubsubsection{Laser()}
+{\footnotesize\ttfamily Laser\+::\+Laser (\begin{DoxyParamCaption}\item[{Vector2}]{position,  }\item[{Vector2}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxyref{Laser}{p.}{class_laser}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pozycja początkowa lasera. \\
+\hline
+{\em velocity} & Wektor prędkości i kierunku lasera. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\label{class_laser_a4cb5d1283fb7af0d90691c03ace9c0a9} 
+\index{Laser@{Laser}!Draw@{Draw}}
+\index{Draw@{Draw}!Laser@{Laser}}
+\doxysubsubsection{Draw()}
+{\footnotesize\ttfamily void Laser\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rysuje laser na ekranie. 
+
+
+\begin{DoxyItemize}
+\item \doxyref{Laser}{p.}{class_laser} jest rysowany jako prostokąt, którego wymiary zależą od kierunku ruchu. 
+\end{DoxyItemize}\label{class_laser_a944370ebf98ae86d3748fad842890905} 
+\index{Laser@{Laser}!getRect@{getRect}}
+\index{getRect@{getRect}!Laser@{Laser}}
+\doxysubsubsection{getRect()}
+{\footnotesize\ttfamily Rectangle Laser\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca prostokąt kolizji lasera. 
+
+\begin{DoxyReturn}{Returns}
+Obiekt Rectangle reprezentujący obszar kolizji lasera. 
+\end{DoxyReturn}
+\label{class_laser_ae591c22ceab62e1b54283a0610dad18c} 
+\index{Laser@{Laser}!Update@{Update}}
+\index{Update@{Update}!Laser@{Laser}}
+\doxysubsubsection{Update()}
+{\footnotesize\ttfamily void Laser\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje pozycję lasera i sprawdza, czy nie wyleciał poza ekran. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{class_laser_aa25c4e376cf57b9c3bcd137f82d0a60d} 
+\index{Laser@{Laser}!active@{active}}
+\index{active@{active}!Laser@{Laser}}
+\doxysubsubsection{active}
+{\footnotesize\ttfamily bool Laser\+::active}
+
+
+
+Flaga określająca, czy laser jest aktywny (widoczny i kolizyjny). 
+
+\label{class_laser_a535ff98bc8c6d781fa7a45e70c904a79} 
+\index{Laser@{Laser}!position@{position}}
+\index{position@{position}!Laser@{Laser}}
+\doxysubsubsection{position}
+{\footnotesize\ttfamily Vector2 Laser\+::position}
+
+
+
+Pozycja lasera na ekranie. 
+
+\label{class_laser_a7f42ffb84e0bd87ec5b086726df2ae4a} 
+\index{Laser@{Laser}!velocity@{velocity}}
+\index{velocity@{velocity}!Laser@{Laser}}
+\doxysubsubsection{velocity}
+{\footnotesize\ttfamily Vector2 Laser\+::velocity}
+
+
+
+Wektor prędkości lasera. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ laser.\+h}\item 
+\textbf{ laser.\+cpp}\end{DoxyCompactItemize}
